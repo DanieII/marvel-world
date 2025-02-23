@@ -1,9 +1,10 @@
 import Characters from "@/components/Characters";
+import Banner from "@/components/Banner";
 
 export default function Home() {
   return (
     <div>
-      <h1>Marvel World</h1>
+      <Banner />
       <Characters />
     </div>
   );

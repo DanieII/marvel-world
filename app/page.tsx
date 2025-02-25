@@ -1,11 +1,11 @@
-import Characters from "@/components/Characters";
+import HomeCharacters from "@/components/HomeCharacters";
 import Banner from "@/components/Banner";
 
 export default function Home() {
   return (
     <div>
       <Banner />
-      <Characters />
+      <HomeCharacters />
     </div>
   );
 }

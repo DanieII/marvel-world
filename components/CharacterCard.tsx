@@ -1,5 +1,5 @@
 import { getThumbnailUrl } from "@/lib/utils";
-import { Character } from "@/types";
+import { Character } from "@/types/marvel";
 import Image from "next/image";
 
 type CharacterCardProps = {

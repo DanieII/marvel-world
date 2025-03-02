@@ -3,7 +3,7 @@ import { Bangers } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 
-const bangers = Bangers({ weight: "400" });
+const bangers = Bangers({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Marvel World",

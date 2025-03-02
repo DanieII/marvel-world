@@ -1,0 +1,1 @@
+export const MARVEL_CHARACTERS_PER_PAGE = 20;

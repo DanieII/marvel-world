@@ -3,6 +3,7 @@ import CharacterCard from "./CharacterCard";
 import { MARVEL_CHARACTERS_PER_PAGE } from "@/lib/constants";
 import Pagination from "./Pagination";
 import ErrorMessage from "./ErrorMessage";
+import Link from "next/link";
 
 export default async function CharactersList({ page = 1 }) {
   try {
@@ -13,7 +14,9 @@ export default async function CharactersList({ page = 1 }) {
       <div className="container mx-auto px-4 pb-6">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {characters.map((character) => (
-            <CharacterCard key={character.id} character={character} />
+            <Link href={`/characters/${character.id}`} key={character.id}>
+              <CharacterCard key={character.id} character={character} />
+            </Link>
           ))}
         </div>
         <Pagination currentPage={page} totalPages={totalPages} />

@@ -6,4 +6,24 @@ export type Character = {
     path: string;
     extension: string;
   };
+  comics: {
+    items: {
+      name: string;
+    }[];
+  };
+  series: {
+    items: {
+      name: string;
+    }[];
+  };
+  stories: {
+    items: {
+      name: string;
+    }[];
+  };
+  events: {
+    items: {
+      name: string;
+    }[];
+  };
 };

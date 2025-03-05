@@ -12,7 +12,6 @@ export default function NavBar() {
         <div className="flex gap-6 text-lg">
           <Link href="/">Home</Link>
           <Link href="/characters">Characters</Link>
-          <Link href="#">Movies</Link>
         </div>
       </div>
     </nav>

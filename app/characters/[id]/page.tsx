@@ -31,14 +31,12 @@ export default async function CharacterDetails({
           <p className="mx-auto max-w-[50%] text-xl">{character.description}</p>
         </div>
       </div>
-      <div className="container mx-auto flex flex-wrap justify-between gap-4 px-4 pt-6">
+      <div className="container mx-auto flex flex-col flex-wrap justify-between gap-6 px-4 pt-6 text-center sm:flex-row">
         <div className="basis-[45%]">
           <h2 className="text-xl">Comics</h2>
           <ul className="list-inside">
             {character.comics.items.map((comic) => (
-              <li className="list-disc" key={comic.name}>
-                {comic.name}
-              </li>
+              <li key={comic.name}>{comic.name}</li>
             ))}
           </ul>
         </div>
@@ -46,9 +44,7 @@ export default async function CharacterDetails({
           <h2 className="text-xl">Series</h2>
           <ul className="list-inside">
             {character.series.items.map((currentSeries) => (
-              <li className="list-disc" key={currentSeries.name}>
-                {currentSeries.name}
-              </li>
+              <li key={currentSeries.name}>{currentSeries.name}</li>
             ))}
           </ul>
         </div>
@@ -56,9 +52,7 @@ export default async function CharacterDetails({
           <h2 className="text-xl">Stories</h2>
           <ul className="list-inside">
             {character.stories.items.map((story) => (
-              <li className="list-disc" key={story.name}>
-                {story.name}
-              </li>
+              <li key={story.name}>{story.name}</li>
             ))}
           </ul>
         </div>
@@ -66,9 +60,7 @@ export default async function CharacterDetails({
           <h2 className="text-xl">Events</h2>
           <ul className="list-inside">
             {character.events.items.map((event) => (
-              <li className="list-disc" key={event.name}>
-                {event.name}
-              </li>
+              <li key={event.name}>{event.name}</li>
             ))}
           </ul>
         </div>

@@ -35,19 +35,14 @@ export default function Pagination({
   return (
     <div className="flex items-center justify-center gap-2 pt-6">
       {currentPage > 1 && (
-        <Link
-          href={`characters?page=${currentPage - 1}`}
-          className="rounded border border-black px-4 py-2 hover:border-gray-200"
-        >
-          Previous
+        <Link className="px-2" href={`characters?page=${currentPage - 1}`}>
+          &lt;
         </Link>
       )}
 
       {pages.map((page, index) =>
         page === "..." ? (
-          <span key={index} className="px-4 py-2">
-            ...
-          </span>
+          <span key={index}>...</span>
         ) : (
           <Link
             key={index}
@@ -62,11 +57,8 @@ export default function Pagination({
       )}
 
       {currentPage < totalPages && (
-        <Link
-          href={`characters?page=${currentPage + 1}`}
-          className="rounded border border-black px-4 py-2 hover:border-gray-200"
-        >
-          Next
+        <Link className="px-2" href={`characters?page=${currentPage + 1}`}>
+          &gt;
         </Link>
       )}
     </div>

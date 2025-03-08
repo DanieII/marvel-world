@@ -20,7 +20,7 @@ export default async function CharacterDetails({
     <div>
       <div className="relative flex h-[65vh] items-center justify-center">
         <Image
-          className="absolute left-0 top-0 -z-10 h-full object-cover brightness-50"
+          className="absolute left-0 top-0 -z-10 h-full w-full object-cover brightness-50"
           src={characterThumbnail}
           width={1600}
           height={500}
@@ -31,7 +31,7 @@ export default async function CharacterDetails({
           <p className="mx-auto max-w-[50%] text-xl">{character.description}</p>
         </div>
       </div>
-      <div className="container mx-auto flex flex-col flex-wrap justify-between gap-6 px-4 pt-6 text-center sm:flex-row">
+      <div className="container mx-auto flex flex-col flex-wrap justify-between gap-6 px-4 py-6 text-center sm:flex-row">
         <div className="basis-[45%]">
           <h2 className="text-xl">Comics</h2>
           <ul className="list-inside">
